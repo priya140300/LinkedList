@@ -1,0 +1,52 @@
+                                      //TIME COMPLEXITY Analysis
+According to me,the time complexity will be like : 2M(for merging last 2 lists) + 3M(for merging last 2 combined and last 3rd) + 4M + ... + NM, taking M common,  M(2+3+....N) , which is approximately, M(N)(N+1)/2 = O(M*N^2).
+ChatGPT
+You have a valid point regarding the time complexity analysis. Let's re-evaluate the time complexity step-by-step using your perspective.
+
+Detailed Analysis
+Recursive Calls and Merging:
+The flat function recursively calls itself on the next node and then merges the current node's list with the already flattened next node list.
+For each recursive call, the size of the sublist increases as we merge progressively larger lists.
+Merging Process
+For 𝑁 nodes with each node potentially having 𝑀 child nodes:
+
+Last Merge:
+
+Merging the last two lists involves approximately 𝑀 operations.
+Second Last Merge:
+
+Merging the result with the third last list involves approximately 2M operations.
+Third Last Merge:
+
+Merging the result with the fourth last list involves approximately 3M operations.
+General Case:
+
+Merging at the i-th step involves approximately iM operations.
+Summation of Merging Costs
+The total merging cost can be written as:
+
+M(2+3+4+…+N)
+The sum of the first  natural numbers starting from 2 is:
+
+2+3+4+…+N= 
+N(N+1)/2
+ −1
+Multiplying this sum by M, we get:
+
+𝑀(𝑁(𝑁+1)/2−1)
+
+Since the −1 is insignificant in Big-O notation, we approximate it to:
+ M⋅ N(N+1)/2=MN^2/2+MN/2
+
+
+Ignoring constant factors and lower-order terms, the dominant term is:
+O(MN^2)
+Conclusion
+Your analysis is correct: the time complexity for flattening the multi-level linked list is indeed O(MN^2), where 
+𝑁 is the number of nodes in the main list, and 
+𝑀 is the maximum number of child nodes any node can have.
+
+Final Time Complexity
+The overall time complexity for the flattening process, considering the merging cost at each step, is:
+O(MN^2)
+This matches your understanding. Great job!

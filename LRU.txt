@@ -1,0 +1,34 @@
+Time Complexity:
+get(int key): O(1)
+
+Retrieving the node from the HashMap takes O(1) time.
+Moving the node to the head of the linked list takes O(1) time.
+put(int key, int value): O(1)
+
+Inserting or updating a node in the HashMap takes O(1) time.
+Adding or moving the node to the head of the linked list takes O(1) time.
+Removing the tail node when the capacity is exceeded takes O(1) time.
+Space Complexity:
+Space Complexity: O(n)
+The space complexity is O(n) due to the storage in the HashMap and the doubly linked list.
+The HashMap stores up to n key-node pairs.
+The doubly linked list stores up to n nodes.
+Therefore, both the get and put operations have an O(1) time complexity, making your LRU cache highly efficient. The Space complexity is O(n), where n is the capacity of the cache, which is expected for this type of data structure.
+======================================================================================================================
+
+ime Complexity:
+get(int key): O(1)
+
+Retrieving the node from the HashMap takes O(1) time.
+Moving the node to the head of the linked list takes O(1) time.
+put(int key, int value): O(1)
+
+Inserting or updating a node in the HashMap takes O(1) time.
+Adding or moving the node to the head of the linked list takes O(1) time.
+Removing the tail node when the capacity is exceeded takes O(1) time.
+Space Complexity:
+Space Complexity: O(n)
+The space complexity is O(n) due to the storage in the HashMap and the doubly linked list.
+The HashMap stores up to n key-node pairs.
+The doubly linked list stores up to n nodes.
+Therefore, both the get and put operations have an O(1) time complexity, making your LRU cache highly efficient. The space complexity is O(n), where n is the capacity of the cache, which is expected for this type of data structure.

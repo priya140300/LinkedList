@@ -1,0 +1,107 @@
+When you create an array of objects in Java, such as LinkedList[] lists = new LinkedList[3];, memory allocation involves two stages:
+
+Allocation of the Array Itself:
+
+This line of code creates an array that can hold three references to LinkedList objects.
+Memory is allocated for the array of references (pointers), not the actual LinkedList objects.
+Initially, each element in the array is set to null because the LinkedList objects are not yet instantiated.
+Memory allocation looks like this:
+plaintext
+Copy code
+lists[0] -> null
+lists[1] -> null
+lists[2] -> null
+Allocation of Individual Objects:
+
+To actually create LinkedList objects and assign them to the array, you need to instantiate each LinkedList object separately.
+For example:
+java
+Copy code
+lists[0] = new LinkedList();
+lists[1] = new LinkedList();
+lists[2] = new LinkedList();
+After these lines, the memory allocation looks like this:
+plaintext
+Copy code
+lists[0] -> LinkedList object at memory address X
+lists[1] -> LinkedList object at memory address Y
+lists[2] -> LinkedList object at memory address Z
+Step-by-Step Memory Allocation
+Declare and Allocate Array of References:
+
+java
+Copy code
+LinkedList[] lists = new LinkedList[3];
+The JVM allocates memory for an array of 3 references to LinkedList objects.
+The array itself is an object, and it has space for 3 LinkedList references.
+Initially, these references are all set to null.
+plaintext
+Copy code
+Array of LinkedList references:
+----------------------
+| lists[0] | lists[1] | lists[2] |
+----------------------
+|  null    |  null    |  null    |
+----------------------
+Instantiate Individual LinkedList Objects:
+
+java
+Copy code
+lists[0] = new LinkedList();
+lists[1] = new LinkedList();
+lists[2] = new LinkedList();
+Each new LinkedList() call creates a new LinkedList object.
+Memory is allocated for each LinkedList object, and their addresses are stored in the array.
+plaintext
+Copy code
+Array of LinkedList references:
+----------------------
+| lists[0] | lists[1] | lists[2] |
+----------------------
+|   X      |   Y      |   Z      |
+----------------------
+
+LinkedList objects:
+----------------------
+| LinkedList at X |
+----------------------
+| LinkedList at Y |
+----------------------
+| LinkedList at Z |
+----------------------
+Complete Example
+Here’s a complete example demonstrating the allocation process:
+
+ memory allocation for the array and the individual LinkedList objects is explicitly shown. The array lists holds references to the LinkedList objects, and each LinkedList object is created separately, allowing you to add data to and traverse each linked list individually
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Breakdown of Time Complexity
+-----------------------------------------
+Building the Min-Heap (PriorityQueue):
+
+Initially inserting all k heads into the PriorityQueue takes 
+𝑂(𝑘log𝑘) time. This is because each insertion into a priority queue takes 
+𝑂(log𝑘) time where k is the number of nodes in the tree, and there are k such insertions.
+Merging Process:
+
+While Loop: The main merging process continues until the PriorityQueue is empty. In each iteration:
+Removing the minimum node (which is 
+𝑂(log𝑘) due to the heap property).
+Adding the next node from the removed node's list back into the PriorityQueue (again 
+𝑂(log⁡𝑘)
+Connecting nodes to form the merged result list (using a dummy node approach, typically 𝑂(𝑛) where n is the total number of nodes across all lists).
+Correct Time Complexity Analysis
+Total Time Complexity:
+Building the Min-Heap: 
+𝑂(𝑘log𝑘)
+Merging Process: 
+𝑂(𝑛log𝑘)
+
+Total=O(𝑘log𝑘) + O(nlogk)=log⁡𝑘(k+n);ignoring the constant k as n dominates here
+,-------------------------,
+| so Total TC=O(nlogk);   |
+'-------------------------'
+
+  ,---------------------------,
+  |   Total SC=O(k);          |
+  '---------------------------'

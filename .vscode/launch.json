@@ -1,0 +1,288 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Add1",
+            "request": "launch",
+            "mainClass": "Add1",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "Add1Recursively",
+            "request": "launch",
+            "mainClass": "Add1Recursively",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "Add2",
+            "request": "launch",
+            "mainClass": "Add2",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "CloneLL",
+            "request": "launch",
+            "mainClass": "CloneLL",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "CommonNodes",
+            "request": "launch",
+            "mainClass": "CommonNodes",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "DeleteDuplicate",
+            "request": "launch",
+            "mainClass": "DeleteDuplicate",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "DeleteDuplicateUnsorted",
+            "request": "launch",
+            "mainClass": "DeleteDuplicateUnsorted",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "DeleteFirst",
+            "request": "launch",
+            "mainClass": "DeleteFirst",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "DeleteGreater",
+            "request": "launch",
+            "mainClass": "DeleteGreater",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "DeleteLast",
+            "request": "launch",
+            "mainClass": "DeleteLast",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "DeleteLoop",
+            "request": "launch",
+            "mainClass": "DeleteLoop",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "DeletePointer",
+            "request": "launch",
+            "mainClass": "DeletePointer",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "DeleteSpecific",
+            "request": "launch",
+            "mainClass": "DeleteSpecific",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "DetectLoop",
+            "request": "launch",
+            "mainClass": "DetectLoop",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "FlattenLL",
+            "request": "launch",
+            "mainClass": "FlattenLL",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "InsertB",
+            "request": "launch",
+            "mainClass": "InsertB",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "InsertPosition",
+            "request": "launch",
+            "mainClass": "InsertPosition",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "IntersectionPoint",
+            "request": "launch",
+            "mainClass": "IntersectionPoint",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "LengthOfLoop",
+            "request": "launch",
+            "mainClass": "LengthOfLoop",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "LinkedList",
+            "request": "launch",
+            "mainClass": "LinkedList",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "Merge2Sortedll",
+            "request": "launch",
+            "mainClass": "Merge2Sortedll",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "MergeKSortedLLs",
+            "request": "launch",
+            "mainClass": "MergeKSortedLLs",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "MergeSorting",
+            "request": "launch",
+            "mainClass": "MergeSorting",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "Middle",
+            "request": "launch",
+            "mainClass": "Middle",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "MoveLastNode",
+            "request": "launch",
+            "mainClass": "MoveLastNode",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "Multiply2ll",
+            "request": "launch",
+            "mainClass": "Multiply2ll",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "Nthnode",
+            "request": "launch",
+            "mainClass": "Nthnode",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "PairWiseSwap",
+            "request": "launch",
+            "mainClass": "PairWiseSwap",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "Palindrome",
+            "request": "launch",
+            "mainClass": "Palindrome",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "RecurTraverse",
+            "request": "launch",
+            "mainClass": "RecurTraverse",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "Reverse",
+            "request": "launch",
+            "mainClass": "Reverse",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "ReverseK",
+            "request": "launch",
+            "mainClass": "ReverseK",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "ReverseRec",
+            "request": "launch",
+            "mainClass": "ReverseRec",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "SearchIter",
+            "request": "launch",
+            "mainClass": "SearchIter",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "SearchRecur",
+            "request": "launch",
+            "mainClass": "SearchRecur",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "SegregateEO",
+            "request": "launch",
+            "mainClass": "SegregateEO",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "Sortedinsert",
+            "request": "launch",
+            "mainClass": "Sortedinsert",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "Sortzot",
+            "request": "launch",
+            "mainClass": "Sortzot",
+            "projectName": "RevisionLL_fef8926f"
+        },
+        {
+            "type": "java",
+            "name": "StartOfLoop",
+            "request": "launch",
+            "mainClass": "StartOfLoop",
+            "projectName": "RevisionLL_fef8926f"
+        }
+    ]
+}

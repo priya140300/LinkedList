@@ -1,0 +1,105 @@
+                               //ANALYSIS OF MERGE SORT TIME COMPLEXITY 
+ok so tell me if i have understood correctly or not:  "the time for total recursive calls for halving the linkedlist until individual element is not obtained is log n,each of the recursive call takes o(n) additional time for finding the middle and o(n) for merging the two sorted halves which sums to o(n)+o(n)=o(2n) ;ignoring the constant 2 so O(n) ,so total time for log n recursive calls is O(n)*logn=O(nlogn)  ?
+ChatGPT
+Yes, you have understood it correctly! Let's restate it in steps to ensure clarity:
+
+Dividing the List (Recursive Calls):
+
+Each time we call mergeSorting, we split the linked list into two halves.
+This division process happens 
+log(𝑛)
+log(n) times because each split divides the list size in half.
+Work Done in Each Recursive Call:
+
+Finding the Middle: Each call to findMiddle takes 
+𝑂(𝑛)
+O(n) time because it involves traversing the list to find the middle.
+Merging Two Halves: Each call to merge2ll takes 
+𝑂(𝑛)
+O(n) time to merge the two sorted halves.
+Total Work in Each Level of Recursion:
+
+At each level of recursion, the work done is:
+𝑂(𝑛)
+O(n) for finding the middle.
+𝑂(𝑛)
+O(n) for merging.
+Therefore, the total work at each level is 
+𝑂(𝑛)+𝑂(𝑛)=𝑂(2𝑛)
+O(n)+O(n)=O(2n), which simplifies to 
+𝑂(𝑛)
+O(n) when we ignore the constant factor.
+Total Work Across All Levels:
+
+Since there are 
+log(𝑛)
+log(n) levels of recursion (each corresponding to a halving of the list), and each level requires 
+𝑂(𝑛)
+O(n) work:
+The total time complexity is 
+𝑂(𝑛)
+O(n) work per level * 
+log(𝑛)
+log(n) levels = 
+𝑂(𝑛log𝑛)
+O(nlogn).
+So, your understanding is correct:
+
+The time complexity for all the recursive calls to halve the linked list is 
+log
+⁡
+(𝑛)log(n).
+Each recursive call takes 
+𝑂(𝑛)
+O(n) additional time for finding the middle and merging the sorted halves.
+Therefore, the total time complexity of the merge sort algorithm for the linked list is 
+𝑂(𝑛log⁡𝑛)
+
+Great job!
+
+thanks :)
+ChatGPT
+You're welcome! I'm glad I could help. If you have any more questions or need further clarification on anything, feel free to ask. Happy coding!
+
+one question,why the recursive calls take log n time?why using log here ;explain 
+ChatGPT
+Great question! The 
+log(𝑛)
+log(n) term in the time complexity analysis comes from the nature of the divide-and-conquer approach used in merge sort. Let's break down why and how this happens.
+
+Understanding the Logarithmic Term in Merge Sort
+Dividing the Problem:
+
+Merge sort works by repeatedly dividing the list (or array) into two approximately equal halves.
+Each division splits the current list into two smaller sublists.
+This process of splitting continues until we have sublists that contain only one element each.
+Number of Divisions:
+
+Suppose we start with a list of 
+𝑛
+n elements.
+In the first step, we divide it into two lists of 
+𝑛/2 elements each.
+In the next step, each of those lists is further divided into two lists of 
+𝑛/4 elements, and so on.
+This division continues until each sublist has only one element.
+Counting the Number of Levels of Division:
+
+To determine how many times we can divide the list in half before we end up with sublists containing a single element, we need to count the number of times we can halve 
+𝑛 until we reach 1.
+Mathematically, this is equivalent to solving 
+𝑛÷2÷2÷2⋯=1
+n÷2÷2÷2⋯=1, which can be written as 
+𝑛×1/2 power𝑘=1  where k is the number of divisions (levels).
+Solving for 
+𝑘 we get 2 power 𝑘=𝑛 which implies 
+𝑘=log base2(n).
+Why Use Logarithm?
+The term 
+log(𝑛) comes from the fact that the number of times we can divide 
+n by 2 (i.e., halve it) before reaching 1 is 
+
+log 2(n).
+In computer science, we often drop the base of the logarithm when expressing time complexity and simply write 
+log⁡(𝑛)
+log(n) because logarithms of different bases differ only by a constant factor, which does not affect Big-O notation.

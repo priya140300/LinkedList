@@ -1,0 +1,1 @@
+//same as traverse function of linkedlist
